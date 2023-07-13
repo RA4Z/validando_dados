@@ -3,5 +3,7 @@ from Cpf_Cnpj import CpfCnpj
 #print(cpf)
 
 exemplo_cnpj = '35379838000112'
-documento = CpfCnpj(exemplo_cnpj, 'cnpj')
+exemplo_cpf = '1265673896'
+
+documento = CpfCnpj(exemplo_cpf, 'cpf')
 print(documento)
