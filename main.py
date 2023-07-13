@@ -1,9 +1,7 @@
-from Cpf_Cnpj import CpfCnpj
-#cpf = Cpf('12656738962')
-#print(cpf)
+from Cpf_Cnpj import Documento
 
 exemplo_cnpj = '35379838000112'
-exemplo_cpf = '1265673896'
+exemplo_cpf = '12656738962'
 
-documento = CpfCnpj(exemplo_cpf, 'cpf')
+documento = Documento.cria_documento(exemplo_cnpj)
 print(documento)
