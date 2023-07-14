@@ -1,10 +1,9 @@
 from Cpf_Cnpj import Documento
+from TelefonesBr import TelefonesBr
 import re
 
-padrao = '\w{5,50}@[a-z]{3,10}.com(.br)?'
-texto = 'rraz639@gmail.com.br'
-respostas = re.search(padrao, texto)
-print(respostas.group())
+telefone = '5547999585728'
+telefone_objeto = TelefonesBr(telefone)
 
 
 """exemplo_cnpj = '35379838000112'
