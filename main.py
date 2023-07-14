@@ -1,11 +1,14 @@
 from Cpf_Cnpj import Documento
 from TelefonesBr import TelefonesBr
-from datetime import datetime, timedelta
 from datas_br import DatasBr
+from acesso_cep import BuscaEndereco
 
-cadastro = DatasBr()
-print(cadastro.tempo_cadastro())
+cep = 89275000
+objeto_cep = BuscaEndereco(cep)
+print(objeto_cep)
 
+"""cadastro = DatasBr()
+print(cadastro.tempo_cadastro())"""
 
 """telefone = '554799585728'
 telefone_objeto = TelefonesBr(telefone)
