@@ -3,9 +3,10 @@ from TelefonesBr import TelefonesBr
 from datas_br import DatasBr
 from acesso_cep import BuscaEndereco
 
-cep = 89275000
+cep = '89275000'
 objeto_cep = BuscaEndereco(cep)
-print(objeto_cep)
+print(objeto_cep.acessa_via_cep())
+
 
 """cadastro = DatasBr()
 print(cadastro.tempo_cadastro())"""
