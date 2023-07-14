@@ -4,8 +4,7 @@ from datetime import datetime, timedelta
 from datas_br import DatasBr
 
 cadastro = DatasBr()
-print(cadastro)
-
+print(cadastro.tempo_cadastro())
 
 
 """telefone = '554799585728'
