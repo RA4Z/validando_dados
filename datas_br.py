@@ -4,6 +4,9 @@ class DatasBr:
     def __init__(self):
         self.momento_cadastro = datetime.today()
 
+    def __str__(self):
+        return self.format_data()
+
     def mes_cadastro(self):
         meses_do_ano = [
             'Janeiro', 'Fevereiro', 'Março', 'Abril',
@@ -17,3 +20,7 @@ class DatasBr:
         dia_semana = ['Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado', 'Domingo']
         numero_dia_semana = self.momento_cadastro.weekday()
         return dia_semana[numero_dia_semana]
+    
+    def format_data(self):
+        data_formatada = self.momento_cadastro.strftime('%d/%m/%Y %H:%M')
+        return data_formatada
